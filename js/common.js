@@ -34,7 +34,7 @@ $(function() {
 
 	// 비즈니스 접대 제공 안내
 	$(".faq dl dt a").on("click", function() {
-		if($(this).parent().next().css("display") == "none") {
+		if ($(this).parent().next().css("display") == "none") {
 			$(".faq dl dt a").removeClass('on');
 			$(".faq dl dd").slideUp(150);
 			$(this).addClass('on');
@@ -47,7 +47,7 @@ $(function() {
 
 	/*  [s] 댓글 (유효성 검사) */
 	$('.btn_upload').on('click', function() {
-		if($(this).parent().prev().prev().children().children('#write_textarea').val() == ""){
+		if ($(this).parent().prev().prev().children().children('#write_textarea').val() == ""){
 			alert("내용을 입력해주세요");
 			$(this).parent().prev().prev().children().children('.box_text').focus();
 			return false;

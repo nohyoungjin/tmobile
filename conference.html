@@ -43,21 +43,21 @@ $(function() {
 		
 		$(this).css('height','100px');
 
-		if( $('.box_text').outerHeight() == 104 ) {
+		if ($('.box_text').outerHeight() == 104) {
 			$('.box_guide').text('주제와 무관한 댓글, 악플은 삭제 될 수 있습니다.');
 		} else {
 			$('.box_guide').text('의견을 등록해주세요.');
 		}
 
-		if( $('div.info_comm ul li .box_module .box_text').outerHeight() == 104 ) {
+		if ($('div.info_comm ul li .box_module .box_text').outerHeight() == 104) {
 			$('div.info_comm ul li .box_module .box_guide').text('주제와 무관한 댓글, 악플은 삭제 될 수 있습니다.');
 		} else {
 			$('div.info_comm ul li .box_module .box_guide').text('의견을 등록해주세요.');
 		}
 
 	})
-	.blur(function(){
-		if($(this).val() == '') {
+	.blur(function() {
+		if ($(this).val() == '') {
 			$(this).next().css('visibility','visible');
 		} else {
 			$(this).next().css('visibility','hidden');
@@ -74,13 +74,13 @@ $(function() {
 		$(this).parent().nextAll(':first').children().children('.box_text').css('height','20px');
 		$(this).parent().nextAll(':first').children().children('.box_text').val('');
 
-		if( $('.box_text').outerHeight() == 104 ) {
+		if ($('.box_text').outerHeight() == 104) {
 			$('.box_guide').text('주제와 무관한 댓글, 악플은 삭제 될 수 있습니다.');
 		} else {
 			$('.box_guide').text('의견을 등록해주세요.');
 		}
 
-		if( $('div.info_comm ul li .box_module .box_text').outerHeight() == 104 ) {
+		if ($('div.info_comm ul li .box_module .box_text').outerHeight() == 104) {
 			$('div.info_comm ul li .box_module .box_guide').text('주제와 무관한 댓글, 악플은 삭제 될 수 있습니다.');
 		} else {
 			$('div.info_comm ul li .box_module .box_guide').text('의견을 등록해주세요.');
@@ -111,9 +111,11 @@ $(function() {
 <div id="wrap">
 
 	<!-- container -->
+
 	<div id="container">
 		
 		<!-- content -->
+
 		<div id="content">
 
 			<div class="conference">
@@ -297,12 +299,15 @@ $(function() {
 			</div>
 
 		</div>
+
 		<!-- //content -->
 
 	</div>
+
 	<!-- //container -->
 
 	<!-- footer -->
+
 	<div id="footer">
 		<ul class="links">
 			<li><a href="javascript:">이용약관</a><span class="bar"></span></li>
