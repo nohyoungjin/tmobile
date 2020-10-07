@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.scrollbar.min.js"></script>
+<script src="js/common.js"></script>
+</head> 
+<body> 
+
+<div id="wrap">
+
+	<!-- header -->
+	<div id="header">
+		<h1><img src="img/tbiz.png" alt=""></h1>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container">
+		<!-- content -->
+		<div id="content">
+			<div class="join">
+				<h2>간편 회원가입</h2>
+				<div class="form_table">
+					<label>이메일 (아이디)<em></em></label>
+					<div class="item i_wrap">
+						<span class="w30"><input type="text" name="" title="레이블 텍스트" class="i_text"></span> 
+						<span class="w08">@</span> 
+						<span class="w30"><input type="text" name="" title="레이블 텍스트" class="i_text"></span> 
+						<span class="w02">&nbsp;</span> 
+						<span class="w30">
+							<select name="">
+								<option>직접입력</option>
+								<option>옵션 둘</option>
+								<option>옵션 셋</option>
+							</select>
+						</span> 
+					</div>
+					<p class="error">이메일(아이디)과 입력하신 정보가 일치 하지 않습니다.</p>
+
+					<label>비밀번호<em></em></label>
+					<div class="item">
+						<input type="password" name="" title="레이블 텍스트" class="i_text" placeholder="8~16자의 영문, 숫자, 특수문자 조합">
+					</div>
+
+					<label>비밀번호 재입력<em></em></label>
+					<div class="item">
+						<input type="password" name="" title="레이블 텍스트" class="i_text">
+					</div>
+					<p class="error">비밀번호가 일치 하지 않습니다.</p>
+
+					<label>이름<em></em></label>
+					<div class="item">
+						<input type="text" name="" title="레이블 텍스트" class="i_text">
+					</div>
+
+					<label>휴대폰 번호<em></em></label>
+					<div class="item i_wrap">
+						<span class="w30">
+							<select name="">
+								<option>010</option>
+								<option>옵션 둘</option>
+								<option>옵션 셋</option>
+							</select>
+						</span> 
+						<span class="w05">-</span> 
+						<span class="w30"><input type="text" name="" title="레이블 텍스트" class="i_text"></span> 
+						<span class="w05">-</span> 
+						<span class="w30"><input type="text" name="" title="레이블 텍스트" class="i_text"></span> 
+					</div>
+				</div>
+				<hr class="hr_bg">
+				<div class="app">
+					<p class="message">컨퍼런스 신청은 기업 T world 간편 회원가입과 함께 진행됩니다.<br>회원 가입 시 이용약관 및 개인정보 수집/이용에 동의하게 됩니다.</p>
+					<div class="checks">
+						<input type="checkbox" id="s11_terms" id="s11_terms" onclick="openCheckLayer('terms_popup','s11_terms')"> 
+						<label for="s11_terms">이용약관 동의 (필수)</label> 
+					</div>
+					<div class="checks">
+						<input type="checkbox" id="s11_person" id="s11_person" onclick="openCheckLayer('person_popup','s11_person')"> 
+						<label for="s11_person">개인정보 수집/이용동의 (필수)</label> 
+					</div>
+					<div class="checks">
+						<input type="checkbox" id="s11_market" id="s11_market" onclick="openCheckLayer('marketing_popup','s11_market')"> 
+						<label for="s11_market">홍보 및 마케팅 동의 (필수)</label> 
+					</div>
+					<div class="checks">
+						<input type="checkbox" id="s11_14" id="s11_14"> 
+						<label for="s11_14">만 14세 이상인 경우 체크해 주세요.<span>만 14세 미만 아동의 회원가입은 불가합니다. (필수)</span></label> 
+					</div>
+				</div>
+				<div class="btn_box_2n">
+					<a href="javascript:">취소</a>
+					<a href="javascript:">간편회원 가입</a>
+				</div>
+			</div>
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+
+	<!-- footer -->
+	<div id="footer">
+		<ul class="links">
+			<li><a href="javascript:">이용약관</a><span class="bar"></span></li>
+			<li><a href="javascript:">개인정보처리방침</a></li>
+		</ul>
+		<ul class="txt">
+			<li>서울특별시 중구 을지로 65&nbsp;&nbsp;대표이사/사장 : 박정호</li>
+			<li>사업자등록번호 : 104-81-37225&nbsp;&nbsp;판매허가번호 : 중구 02923호</li>
+			<li>고객상담 : 휴대폰 국번없이 T.1559(무료) 또는 T.1599-6011(유료)</li>
+		</ul>
+		<p class="copyR">COPYRIGHT SK TELECOM CO., LTD. ALL RIGHTS RESERVED</p>
+	</div>
+	<!-- //footer -->
+
+	<!-- 간편회원 이용약관 팝업 -->
+
+	<div id="terms_popup" class="modal_box terms">
+		<div class="modal_header">
+			간편회원 이용약관
+			<a href="javascript:" onclick="closeLayer('terms_popup'); return false;" class="popup_close">닫기</a>
+		</div>
+		<div class="modal_body scrollbar-inner">
+			<h3>기업 T world 간편회원 이용약관</h3>
+			<h4>제1장 총칙</h4>
+			<h5>제1조 (목적)</h5>
+			<p>이 약관은 SK 텔레콤주식회사 ( 이하 " 회사 " 라 합니다 ) 가 제공하는 기업 T world 솔루션 간편가입 서비스( 이하 “서비스" 라 합니다 ) 의 이용조건 및 절차 등에 관한 사항을 규정함을 목적으로 합니다.</p>
+			<h5>제2조 (정의)</h5>
+			<p>① 본 약관에서 사용하는 용어의 정의는 다음과 같습니다. 1. 서비스 : b2b.tworld.co.kr 과 직접 연동되어 간편회원 가입을 통해 온라인에서 기업</p>
+			<h5>제1조 (목적)</h5>
+			<p>이 약관은 SK 텔레콤주식회사 ( 이하 " 회사 " 라 합니다 ) 가 제공하는 기업 T world 솔루션 간편가입 서비스( 이하 “서비스" 라 합니다 ) 의 이용조건 및 절차 등에 관한 사항을 규정함을 목적으로 합니다.</p>
+			<h5>제2조 (정의)</h5>
+			<p>① 본 약관에서 사용하는 용어의 정의는 다음과 같습니다. 1. 서비스 : b2b.tworld.co.kr 과 직접 연동되어 간편회원 가입을 통해 온라인에서 기업</p>
+			<div class="btn_box mt40">
+				<a href="javascript:" onclick="closeLayer('terms_popup'); return false;" class="w100">확인</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 개인정보처리방침 팝업 -->
+
+	<div id="person_popup" class="modal_box terms">
+		<div class="modal_header">
+			개인정보처리방침
+			<a href="javascript:" onclick="closeLayer('person_popup'); return false;" class="popup_close">닫기</a>
+		</div>
+		<div class="modal_body scrollbar-inner">
+			<p>준비중..</p>
+			<div class="btn_box mt40">
+				<a href="javascript:" onclick="closeLayer('person_popup'); return false;" class="w100">확인</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 홍보 마케팅 동의 팝업 -->
+
+	<div id="marketing_popup" class="modal_box terms">
+		<div class="modal_header">
+			간편회원 이용약관
+			<a href="javascript:" onclick="closeLayer('marketing_popup'); return false;" class="popup_close">닫기</a>
+		</div>
+		<div class="modal_body scrollbar-inner">
+			<p>홍보 및 마케팅 동의</p>
+			<div class="btn_box mt40">
+				<a href="javascript:" onclick="closeLayer('marketing_popup'); return false;" class="w100">확인</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</body> 
+</html>
+

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/jquery.scrollbar.min.js"></script>
+</head> 
+<body> 
+
+<div id="wrap">
+
+	<!-- header -->
+	<div id="header">
+		<h1><img src="img/tbiz.png" alt=""></h1>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container">
+
+		<ul class="tab">
+			<li><a class="on" href="index.html">컨퍼런스 안내/신청</a></li>
+			<li><a class="" href="live.html">LIVE 방송 보기</a></li>
+		</ul>
+		
+		<!-- content -->
+		<div id="content">
+			<div class="things">
+				<a href="javascript:" onclick="openLayer('sns_popup')" class="sns_btn"><img src="img/sns_icon.png" alt=""></a>
+				<img src="img/things.png" alt="">
+				<a href="javascript:" class="ask_btn">참가신청하기</a>
+			</div>
+			<div class="social">
+				<p><strong>T아이디/소셜 계정</strong>으로도 신청하실 수 있습니다.</p>
+				<ul>
+					<li>
+						<a href="javascript:"><i><span>T아이디</span></i>
+							<!-- 
+							<div class="s_both">
+								<div class="fl"><img src="img/tworld_icon.png" alt=""></div>
+								<div class="fr">T아이디</div>
+							</div> 
+							-->
+						</a> 
+					</li>
+					<li id="naverIdLogin" class="n">
+						<a href="javascript:"><i><span>네이버</span></i>
+							<!-- 
+							<div class="s_both">
+								<div class="fl"><img src="img/naver_icon.png" alt=""></div>
+								<div class="fr">네이버</div>
+							</div> 
+							-->
+						</a> 
+					</li>
+					<li>
+						<a href="javascript:"><i><span>페이스북</span></i>
+							<!-- 
+							<div class="s_both">
+								<div class="fl"><img src="img/facebook_icon.png" alt=""></div>
+								<div class="fr">페이스북</div>
+							</div> 
+							-->
+						 </a>
+					</li>
+				</ul>
+			</div>
+			<!-- <div class="t_movie">
+				<img src="img/t_movie.png" alt="">
+			</div> -->
+		</div>
+		<!-- //content -->
+
+	</div>
+	<!-- //container -->
+
+	<!-- footer -->
+	<div id="footer">
+		<ul class="links">
+			<li><a href="javascript:" onclick="openLayer('terms_popup')">이용약관</a><span class="bar"></span></li>
+			<li><a href="javascript:" onclick="openLayer('person_popup')" class="person_area">개인정보처리방침</a></li>
+		</ul>
+		<ul class="txt">
+			<li>서울특별시 중구 을지로 65&nbsp;&nbsp;대표이사/사장 : 박정호</li>
+			<li>사업자등록번호 : 104-81-37225&nbsp;&nbsp;판매허가번호 : 중구 02923호</li>
+			<li>고객상담 : 휴대폰 국번없이 T.1559(무료) 또는 T.1599-6011(유료)</li>
+		</ul>
+		<p class="copyR">COPYRIGHT SK TELECOM CO., LTD. ALL RIGHTS RESERVED</p>
+		<!-- <p class="bizT"><a href="http://b2b.tworld.co.kr/bizts/main.bs" target="_blank"><strong>기업 T world</strong> 홈페이지 바로 가기</a></p> -->
+	</div>
+	<!-- //footer -->
+
+	<!-- SNS 공유하기 팝업 -->
+
+	<div id="sns_popup" class="modal_box">
+		<div class="modal_header">
+			SNS 공유하기
+			<a href="javascript:" onclick="closeLayer('sns_popup'); return false;" class="popup_close">닫기</a>
+		</div>
+		<div class="modal_body">
+			<ul class="share">
+				<li>
+					<a href="javascript:">
+						<img src="img/talk.png">
+						카카오톡
+					</a>
+				</li>
+				<li>
+					<a href="javascript:">
+						<img src="img/facebook.png">
+						페이스북
+					</a>
+				</li>
+				<li>
+					<a href="javascript:">
+						<img src="img/twitter.png">
+						트위터
+					</a>
+				</li>
+			</ul>
+			<div class="url_copy">
+				<div class="fl">
+					<input type="text" accesskey="s" title="URL" class="keyword">
+				</div>
+				<div class="fr">
+					 <button type="button" class="btn_black">URL 복사</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 간편회원 이용약관 팝업 -->
+
+	<div id="terms_popup" class="modal_box terms">
+		<div class="modal_header">
+			간편회원 이용약관
+			<a href="javascript:" onclick="closeLayer('terms_popup'); return false;" class="popup_close">닫기</a>
+		</div>
+		<div class="modal_body scrollbar-inner">
+			<h3>기업 T world 간편회원 이용약관</h3>
+			<h4>제1장 총칙</h4>
+			<h5>제1조 (목적)</h5>
+			<p>이 약관은 SK 텔레콤주식회사 ( 이하 " 회사 " 라 합니다 ) 가 제공하는 기업 T world 솔루션 간편가입 서비스( 이하 “서비스" 라 합니다 ) 의 이용조건 및 절차 등에 관한 사항을 규정함을 목적으로 합니다.</p>
+			<h5>제2조 (정의)</h5>
+			<p>① 본 약관에서 사용하는 용어의 정의는 다음과 같습니다. 1. 서비스 : b2b.tworld.co.kr 과 직접 연동되어 간편회원 가입을 통해 온라인에서 기업</p>
+			<h5>제1조 (목적)</h5>
+			<p>이 약관은 SK 텔레콤주식회사 ( 이하 " 회사 " 라 합니다 ) 가 제공하는 기업 T world 솔루션 간편가입 서비스( 이하 “서비스" 라 합니다 ) 의 이용조건 및 절차 등에 관한 사항을 규정함을 목적으로 합니다.</p>
+			<h5>제2조 (정의)</h5>
+			<p>① 본 약관에서 사용하는 용어의 정의는 다음과 같습니다. 1. 서비스 : b2b.tworld.co.kr 과 직접 연동되어 간편회원 가입을 통해 온라인에서 기업</p>
+			<div class="btn_box mt40">
+				<a href="javascript:" onclick="closeLayer('terms_popup'); return false;" class="w100">확인</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 개인정보처리방침 팝업 -->
+
+	<div id="person_popup" class="modal_box terms">
+		<div class="modal_header">
+			개인정보처리방침
+			<a href="javascript:" onclick="closeLayer('person_popup'); return false;" class="popup_close">닫기</a>
+		</div>
+		<div class="modal_body scrollbar-inner">
+			<p>준비중..</p>
+			<div class="btn_box mt40">
+				<a href="javascript:" onclick="closeLayer('person_popup'); return false;" class="w100">확인</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</body> 
+</html>
