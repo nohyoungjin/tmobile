@@ -1,0 +1,16 @@
+str = ''
+str += '<div id="footer">'
+str += '	<ul class="links">'
+str += '		<li><a href="javascript:">이용약관</a><span class="bar"></span></li>'
+str += '		<li><a href="javascript:">개인정보처리방침</a></li>'
+str += '	</ul>'
+str += '	<ul class="txt">'
+str += '		<li>서울특별시 중구 을지로 65&nbsp;&nbsp;대표이사/사장 : 박정호</li>'
+str += '		<li>사업자등록번호 : 104-81-37225&nbsp;&nbsp;판매허가번호 : 중구 02923호</li>'
+str += '		<li>고객상담 : 휴대폰 국번없이 T.1559(무료) 또는 T.1599-6011(유료)</li>'
+str += '	</ul>'
+str += '	<p class="copyR">COPYRIGHT SK TELECOM CO., LTD. ALL RIGHTS RESERVED</p>'
+str += '</div>'
+str = ''
+
+document.write(str);

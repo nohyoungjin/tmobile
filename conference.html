@@ -1,109 +1,118 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-<title></title>
-<link rel="stylesheet" type="text/css" href="css/common.css">
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="js/common.js"></script>
-<script src="js/jquery.fitvids.js"></script>
-<script src="js/jquery.scrollbar.min.js"></script>
-<script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width">
+	<title>tmobile</title>
+	<link rel="stylesheet" href="css/common.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-$(function() {
+	<script>
 
-	// 반응형 동영상
-	
-	$("#container").fitVids();
+		$(function() {
 
-	//
+			// 반응형 동영상
+			
+			$('#container').fitVids();
 
-	var textCountLimit = 500;
 
-	$('textarea[name=editor]').keyup(function() {
-		// 텍스트영역의 길이를 체크
-		var textLength = $(this).val().length;
+			//
 
-		// 입력된 텍스트 길이를 #textCount 에 업데이트 해줌
-		$('.count_num').text(textLength);
-		 
-		// 제한된 길이보다 입력된 길이가 큰 경우 제한 길이만큼만 자르고 텍스트영역에 넣음
-		if (textLength > textCountLimit) {
-			$(this).val($(this).val().substr(0, textCountLimit));
-		}
-	});
+			var textCountLimit = 500;
 
-	// 의견 등록
-	
-	$('.box_text').focus(function() {
-		$('.box_module').addClass('on');
-		$(this).next().css('visibility','hidden');
-		
-		$(this).css('height','100px');
+			$('textarea[name=editor]').keyup(function() {
 
-		if ($('.box_text').outerHeight() == 104) {
-			$('.box_guide').text('주제와 무관한 댓글, 악플은 삭제 될 수 있습니다.');
-		} else {
-			$('.box_guide').text('의견을 등록해주세요.');
-		}
+				// 텍스트영역의 길이를 체크
 
-		if ($('div.info_comm ul li .box_module .box_text').outerHeight() == 104) {
-			$('div.info_comm ul li .box_module .box_guide').text('주제와 무관한 댓글, 악플은 삭제 될 수 있습니다.');
-		} else {
-			$('div.info_comm ul li .box_module .box_guide').text('의견을 등록해주세요.');
-		}
+				var textLength = $(this).val().length;
 
-	})
-	.blur(function() {
-		if ($(this).val() == '') {
-			$(this).next().css('visibility','visible');
-		} else {
-			$(this).next().css('visibility','hidden');
-		}
-	})
-	.blur();
+				// 입력된 텍스트 길이를 #textCount 에 업데이트 해줌
 
-	// 의견 등록 닫기
+				$('.count_num').text(textLength);
+				 
+				// 제한된 길이보다 입력된 길이가 큰 경우 제한 길이만큼만 자르고 텍스트영역에 넣음
 
-	$('.box_close').on('click', function() {
-		$(this).parents('.box_module').removeClass('on');
-		$(this).parent().nextAll(':first').children().children('.box_guide').css('visibility','visible');
-		
-		$(this).parent().nextAll(':first').children().children('.box_text').css('height','20px');
-		$(this).parent().nextAll(':first').children().children('.box_text').val('');
+				if (textLength > textCountLimit) {
+					$(this).val($(this).val().substr(0, textCountLimit));
+				}
+			});
 
-		if ($('.box_text').outerHeight() == 104) {
-			$('.box_guide').text('주제와 무관한 댓글, 악플은 삭제 될 수 있습니다.');
-		} else {
-			$('.box_guide').text('의견을 등록해주세요.');
-		}
 
-		if ($('div.info_comm ul li .box_module .box_text').outerHeight() == 104) {
-			$('div.info_comm ul li .box_module .box_guide').text('주제와 무관한 댓글, 악플은 삭제 될 수 있습니다.');
-		} else {
-			$('div.info_comm ul li .box_module .box_guide').text('의견을 등록해주세요.');
-		}
+			// 의견 등록
+			
+			$('.box_text').focus(function() {
 
-		return false;
-	});
+				$('.box_module').addClass('on');
+				$(this).next().css('visibility','hidden');
+				
+				$(this).css('height','100px');
 
-	// 답글 등록
+				if ($('.box_text').outerHeight() == 104) {
+					$('.box_guide').text('주제와 무관한 댓글, 악플은 삭제 될 수 있습니다.');
+				} else {
+					$('.box_guide').text('의견을 등록해주세요.');
+				}
 
-	$('.btn_reply').on('click', function() {
-		$('div.info_comm ul li .box_module').css("display","block");
-	});
+				if ($('div.info_comm ul li .box_module .box_text').outerHeight() == 104) {
+					$('div.info_comm ul li .box_module .box_guide').text('주제와 무관한 댓글, 악플은 삭제 될 수 있습니다.');
+				} else {
+					$('div.info_comm ul li .box_module .box_guide').text('의견을 등록해주세요.');
+				}
 
-	// 답글 닫기
+			}).blur(function() {
+				if ($(this).val() == '') {
+					$(this).next().css('visibility','visible');
+				} else {
+					$(this).next().css('visibility','hidden');
+				}
+			})
+			.blur();
 
-	$('div.info_comm ul li .box_module .box_close').on('click', function() {
-		$('div.info_comm ul li .box_module').css("display","none");
-	});
 
-});
+			// 의견 등록 닫기
 
-</script>
+			$('.box_close').on('click', function() {
+
+				$(this).parents('.box_module').removeClass('on');
+				$(this).parent().nextAll(':first').children().children('.box_guide').css('visibility','visible');
+				
+				$(this).parent().nextAll(':first').children().children('.box_text').css('height','20px');
+				$(this).parent().nextAll(':first').children().children('.box_text').val('');
+
+				if ($('.box_text').outerHeight() == 104) {
+					$('.box_guide').text('주제와 무관한 댓글, 악플은 삭제 될 수 있습니다.');
+				} else {
+					$('.box_guide').text('의견을 등록해주세요.');
+				}
+
+				if ($('div.info_comm ul li .box_module .box_text').outerHeight() == 104) {
+					$('div.info_comm ul li .box_module .box_guide').text('주제와 무관한 댓글, 악플은 삭제 될 수 있습니다.');
+				} else {
+					$('div.info_comm ul li .box_module .box_guide').text('의견을 등록해주세요.');
+				}
+
+				return false;
+
+			});
+
+
+			// 답글 등록
+
+			$('.btn_reply').on('click', function() {
+				$('div.info_comm ul li .box_module').css('display','block');
+			});
+
+
+			// 답글 닫기
+
+			$('div.info_comm ul li .box_module .box_close').on('click', function() {
+				$('div.info_comm ul li .box_module').css('display','none');
+			});
+
+		});
+
+	</script>
 
 </head> 
 <body> 
@@ -308,18 +317,8 @@ $(function() {
 
 	<!-- footer -->
 
-	<div id="footer">
-		<ul class="links">
-			<li><a href="javascript:">이용약관</a><span class="bar"></span></li>
-			<li><a href="javascript:">개인정보처리방침</a></li>
-		</ul>
-		<ul class="txt">
-			<li>서울특별시 중구 을지로 65&nbsp;&nbsp;대표이사/사장 : 박정호</li>
-			<li>사업자등록번호 : 104-81-37225&nbsp;&nbsp;판매허가번호 : 중구 02923호</li>
-			<li>고객상담 : 휴대폰 국번없이 T.1559(무료) 또는 T.1599-6011(유료)</li>
-		</ul>
-		<p class="copyR">COPYRIGHT SK TELECOM CO., LTD. ALL RIGHTS RESERVED</p>
-	</div>
+	<script src="inc/footer.js"></script>
+	
 	<!-- //footer -->
 
 	<!-- SNS 공유하기 팝업 -->
@@ -375,6 +374,10 @@ $(function() {
 	</div>
 
 </div>
+
+<script src="js/jquery.scrollbar.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/common.js"></script>
 
 </body> 
 </html>
