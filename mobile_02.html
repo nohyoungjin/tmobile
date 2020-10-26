@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 	<meta name="viewport" content="width=device-width">
 	<title>tmobile</title>
 	<link rel="stylesheet" href="css/common.css">
@@ -55,14 +55,14 @@
 					<div class="item r_wrap">
 						<p class="r_txt">정부 소유 기관의 직원이십니까?</p>
 						<div class="r_both">
-							<input name="flag_1" type="radio" value="" id="c1" class="i_radio radio"><label for="c1">예</label> &nbsp;
-							<input name="flag_1" type="radio" value="" id="c2" class="i_radio radio"><label for="c2">아니오</label>
+							<input type="radio" name="flag_1" id="c1" class="i_radio radio"><label for="c1">예</label> &nbsp;
+							<input type="radio" name="flag_1" id="c2" class="i_radio radio"><label for="c2">아니오</label>
 						</div>
 					</div>
 
 					<label>회사명<em></em></label>
 					<div class="item">
-						<input type="text" name="" title="회사명" class="company_nm i_text">
+						<input type="text" name="" class="company_nm i_text" title="회사명">
 					</div>
 
 					<label>업종<em></em></label>
@@ -76,7 +76,7 @@
 
 					<label>부서<em></em></label>
 					<div class="item">
-						<input type="text" name="" title="부서" class="department_nm i_text">
+						<input type="text" name="" class="department_nm i_text" title="부서">
 					</div>
 
 					<label>담당직무<em></em></label>
@@ -90,7 +90,7 @@
 
 					<label>직함<em></em></label>
 					<div class="item">
-						<input type="text" name="" title="직함" class="title_nm i_text">
+						<input type="text" name="" class="title_nm i_text" title="직함">
 					</div>
 				</div>
 				<div class="faq">
@@ -136,14 +136,14 @@
 
 	<div id="complete_popup" class="modal_box completion">
 		<div class="modal_header">
-			<a href="javascript:" onclick="closeLayer('complete_popup'); return false;" class="popup_close">닫기</a>
+			<a href="javascript:" class="popup_close" onclick="closeLayer('complete_popup'); return false;">닫기</a>
 		</div>
 		<div class="modal_body">
 			<img src="img/confirm.png">
 			<strong>컨퍼런스 신청이 <em class="red">완료되었습니다.</em></strong>
 			<p class="txt">내 신청 내역은 기업 T world 홈페이지의<br><a href="javascript:">MY 신청 내역</a> 메뉴에서 확인하실 수 있습니다.</p>
 			<div class="btn_box mt40">
-				<a href="javascript:" onclick="closeLayer('complete_popup'); return false;" class="w100">확인</a>
+				<a href="javascript:" class="w100" onclick="closeLayer('complete_popup'); return false;">확인</a>
 			</div>
 		</div>
 	</div>
